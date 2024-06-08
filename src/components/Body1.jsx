@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Backgroundvid.css";
 import videoSrc from "../cafe.mp4";
+import {Link} from "react-router-dom"
 
 function Body1() {
   return (
@@ -16,7 +17,7 @@ function Body1() {
           We are a locally owned and operated coffee shop with handcrafted
           espresso drinks, craft soda and single origin brews.
         </p>
-        <a href="#" class="order-now">Order Now</a>
+        <Link className="order-now" to="/order-now">Order Now</Link>
       </div>
     </div>
   );

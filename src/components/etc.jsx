@@ -87,3 +87,52 @@ app.post('/reviews', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+
+<div>
+<Header />
+<Body1 />
+<Body2 />
+<div className="address">
+<h1>{shop.name}</h1>
+<p>{shop.address}</p>
+<p>Phone: {shop.phone}</p>
+<p>Open Hours: {shop.open_hours}</p>
+<div className="map">
+  <iframe
+    title="map"
+    src={`https://www.google.com/maps?q=${encodeURIComponent(shop.address)}&output=embed`}
+    width="600"
+    height="450"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+  ></iframe>
+</div>
+</div>
+<Body3 />
+<Footer />
+</div>
+
+return (<header>
+  <div id="headerback">
+    <h1 id="header">Mocha Delight</h1>
+  </div>
+  <nav>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#menu">Menu</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </nav>
+    <div><a id="signin" href="#signup">Sign in</a></div>      
+  </header>
+);
+<SignUpModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          onSignUp={handleSignUp}
+        />
+
+        userName={userName} onSignUpClick={() => setIsModalOpen(true)} 

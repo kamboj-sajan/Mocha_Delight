@@ -1,13 +1,18 @@
 import React ,{useState,useEffect} from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./Header";
-import Body1 from "./Body1";
-import Body2 from "./Body2";
-import MenuList from "./MenuList";
-import menuItems from "./menuitems";
+
 import axios from "axios";
 import "../css/address.css"
 import Footer from "./end";
-import Body3 from "./Body3";
+
+
+import Home from "./Home";
+import Contact from "./Contact";
+import About from "./About";
+import Menu from "./Menu";
+import OrderNow from "./OrderNow";
+
 
 
 function App() {
@@ -27,31 +32,19 @@ function App() {
  
 
   return (
-    <div>
-      <Header />
-      <Body1 />
-      <Body2 />
-     <div className="address">
-      <h1>{shop.name}</h1>
-      <p>{shop.address}</p>
-      <p>Phone: {shop.phone}</p>
-      <p>Open Hours: {shop.open_hours}</p>
-      <div className="map">
-        <iframe
-          title="map"
-          src={`https://www.google.com/maps?q=${encodeURIComponent(shop.address)}&output=embed`}
-          width="600"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
-    </div>
-    <Body3 />
-    <Footer />
-      </div>
-
+ <Router>
+ <div>
+ <Header />
+   <Routes>
+     <Route path="/" element={<Home shop={shop} />} />
+     <Route path="/contact" element={<Contact />} />
+     <Route path="/about" element={<About />} />
+     <Route path="/menu" element={<Menu />} />
+     <Route path="/order-now" element={<OrderNow />} />
+   </Routes>
+   <Footer />
+ </div>
+</Router>
       
   );
 }

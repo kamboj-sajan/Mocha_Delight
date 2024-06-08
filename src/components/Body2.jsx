@@ -1,5 +1,6 @@
 import React from "react";
 import cafeImage from "./body2.jpg"
+import "../css/Body2.css"
 
 function Body2(){
     return (

@@ -1,9 +1,12 @@
 import express from "express"
 import cors from "cors";
 import pg from "pg";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import bodyParser from "body-parser";
+
 
 const { Pool } = pg;
-
 
 const app = express();
 const port = 5000;
@@ -19,6 +22,10 @@ const pool = new Pool({
 app.use(cors());
 app.use(express.json());
 
+app.use(bodyParser.json());
+
+const SECRET_KEY = "TOPSECRETWORD";
+
 app.get('/shop', async (req, res) => {
   try {
     const result = await pool.query('SELECT * FROM shops LIMIT 1');
@@ -28,6 +35,9 @@ app.get('/shop', async (req, res) => {
     res.status(500).send('Server Error');
   }
 });
+
+
+
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
