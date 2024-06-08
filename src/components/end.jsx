@@ -36,9 +36,6 @@ function Footer(){
         <a href="#"><i className="fab fa-twitter"></i></a>
         <a href="#"><i className="fab fa-facebook-f"></i></a>
       </div>
-      <div className="footer-legal">
-        <p>&copy; 2023 Little Collins. <a href="#">Legal</a>. Website by <a href="#">Headword</a>!</p>
-      </div>
     </footer>
   );
 };

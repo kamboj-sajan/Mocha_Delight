@@ -53,14 +53,3 @@
   font-size: 18px;
 }
 
-.footer-legal {
-  flex: 1 100%;
-  text-align: center;
-  margin: 20px 0;
-  color: #777;
-}
-
-.footer-legal a {
-  color: #007BFF;
-  text-decoration: none;
-}
