@@ -1,79 +1,66 @@
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #f8f8f8;
-    padding: 20px;
-    font-family: "lobster", sans-serif;
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin: 10px;
-  }
-  
-  .footer-section h2, .footer-section h3 {
-    color: #333;
-    font-family: "lobster", sans-serif
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin: 5px 0;
-  }
-  
-  .footer-section ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .footer-section ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-section p {
-    margin: 5px 0;
-  }
-  
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10px 0;
-  }
-  
-  .footer-social a {
-    color: #333;
-    margin: 0 10px;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  
-  .footer-social a:hover {
-    color: #0073e6;
-  }
-  
-  .footer-legal {
-    text-align: center;
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  .footer-legal p {
-    color: #666;
-    font-size: 14px;
-  }
-  
-  .footer-legal a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .footer-legal a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h2, .footer-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-legal {
+  flex: 1 100%;
+  text-align: center;
+  margin: 20px 0;
+  color: #777;
+}
+
+.footer-legal a {
+  color: #007BFF;
+  text-decoration: none;
+}

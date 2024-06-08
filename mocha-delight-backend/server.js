@@ -36,8 +36,27 @@ app.get('/shop', async (req, res) => {
   }
 });
 
+app.get('/reviews', async (req, res) => {
+  try {
+      const result = await pool.query('SELECT * FROM reviews');
+      res.json(result.rows);
+  } catch (err) {
+      console.error(err.message);
+  }
+});
 
-
+app.post('/reviews', async (req, res) => {
+  try {
+      const { name, review } = req.body;
+      const newReview = await pool.query(
+          'INSERT INTO reviews (name, review) VALUES ($1, $2) RETURNING *',
+          [name, review]
+      );
+      res.json(newReview.rows[0]);
+  } catch (err) {
+      console.error(err.message);
+  }
+});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

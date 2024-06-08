@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./Header";
 
 import axios from "axios";
-import "../css/address.css"
+
 import Footer from "./end";
 
 
@@ -12,6 +12,7 @@ import Contact from "./Contact";
 import About from "./About";
 import Menu from "./Menu";
 import OrderNow from "./OrderNow";
+import ReviewsPage from "./ReviewsPage";
 
 
 
@@ -41,6 +42,7 @@ function App() {
      <Route path="/about" element={<About />} />
      <Route path="/menu" element={<Menu />} />
      <Route path="/order-now" element={<OrderNow />} />
+     <Route path="/reviews" element={<ReviewsPage />} />
    </Routes>
    <Footer />
  </div>

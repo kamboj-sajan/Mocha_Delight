@@ -1,0 +1,49 @@
+  
+#mapc {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  #mapc h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .map iframe {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+  }
+  
+  .address {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .address p {
+    margin: 5px 0;
+  }
+  
+  .address a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .address a:hover {
+    text-decoration: underline;
+  }
+  

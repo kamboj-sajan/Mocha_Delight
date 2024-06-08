@@ -6,11 +6,13 @@
   .menu-list h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    font-family:'Merriweather', serif ;
   }
   
   .menu-list h3 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .menu-items-container {

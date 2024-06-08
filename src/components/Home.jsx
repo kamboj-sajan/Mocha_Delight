@@ -2,12 +2,16 @@ import React from "react";
 import Body1 from "./Body1";
 import Body2 from "./Body2";
 import Body3 from "./Body3";
+import Body4 from "./Body4";
+import "../css/Home.css"
+
 
 function Home({ shop }) {
   return (
     <div>
       <Body1 />
-      <Body2 />
+      <Body2 /> 
+      <div id="mapc">
       <div className="address">
         <h1>{shop.name}</h1>
         <p>{shop.address}</p>
@@ -23,9 +27,11 @@ function Home({ shop }) {
             allowFullScreen=""
             loading="lazy"
           ></iframe>
+          </div>
         </div>
       </div>
       <Body3 />
+     <Body4 />
     </div>
   );
 }

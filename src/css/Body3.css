@@ -1,55 +1,54 @@
-.Body3 {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    
-  }
-  
-  .Body3 .content {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .Body3 .content p {
-    margin: 0;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-  }
-  
-  .Body3 .content h1 {
-    margin: 10px 0;
-    font-size: 2.5rem;
-  }
-  
-  .Body3 .icons {
-    margin-top: 15px;
-  }
-  
-  .Body3 .icons a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .Body3 .icons a:hover {
-    color: #ffcc00; /* Change color on hover */
-  }
-  
-  /*
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: white;
-    text-align: center;
-    */
+.body3 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content p {
+  margin: 0;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icons a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #ffcc00; 
+}

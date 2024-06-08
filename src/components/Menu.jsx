@@ -5,7 +5,6 @@ import menuItems from "./menuitems";
 function Menu() {
   return (
     <div>
-      <h1>Our Menu</h1>
       <MenuList items={menuItems} />
     </div>
   );

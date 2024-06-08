@@ -5,7 +5,6 @@ import "../css/MenuList.css";
 const MenuList = ({ items }) => {
   return (
     <div className="menu-list">
-      <h2>Menu</h2>
       <div className="menu-items-container">
       {items.map((item, index) => (
         <MenuItem
