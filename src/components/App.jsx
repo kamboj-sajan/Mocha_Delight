@@ -17,19 +17,6 @@ import ReviewsPage from "./ReviewsPage";
 
 
 function App() {
-  const [shop, setShop] = useState(null);
-
-  useEffect(() => {
-    axios.get('https://backend-gamma-ivory.vercel.app/shop')
-      .then(response => {
-        setShop(response.data);
-      })
-      .catch(error => {
-        console.error( error);
-      });
-  }, []);
-
-  if (!shop) return <div>Loading...</div>;
  
 
   return (
@@ -37,7 +24,7 @@ function App() {
  <div>
  <Header />
    <Routes>
-     <Route path="/" element={<Home shop={shop} />} />
+     <Route path="/" element={<Home />} />
      <Route path="/contact" element={<Contact />} />
      <Route path="/about" element={<About />} />
      <Route path="/menu" element={<Menu />} />
