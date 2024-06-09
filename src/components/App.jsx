@@ -20,7 +20,7 @@ function App() {
   const [shop, setShop] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/shop')
+    axios.get('https://backend-gamma-ivory.vercel.app/shop')
       .then(response => {
         setShop(response.data);
       })
