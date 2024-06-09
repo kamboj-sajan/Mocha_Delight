@@ -8,7 +8,7 @@ function ReviewForm({ fetchReviews }){
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/reviews', { name, review });
+    await axios.post('https://backend-gamma-ivory.vercel.app/reviews', { name, review });
     fetchReviews();
     setName('');
     setReview('');
