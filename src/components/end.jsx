@@ -10,10 +10,9 @@ function Footer(){
       <div className="footer-section">
         <h3>NAVIGATE</h3>
         <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Catering</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Order</a></li>
+         <li><Link to="/menu">Cafe-menu</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/order-now">Order</Link></li>
         </ul>
       </div>
       <div className="footer-section">
@@ -31,11 +30,7 @@ function Footer(){
            Weekends: 7:30am-6pm
         </p>
       </div>
-      <div className="footer-social">
-        <a href="#"><i className="fab fa-instagram"></i></a>
-        <a href="#"><i className="fab fa-twitter"></i></a>
-        <a href="#"><i className="fab fa-facebook-f"></i></a>
-      </div>
+
     </footer>
   );
 };
