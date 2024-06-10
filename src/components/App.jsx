@@ -13,6 +13,8 @@ import About from "./About";
 import Menu from "./Menu";
 import OrderNow from "./OrderNow";
 import ReviewsPage from "./ReviewsPage";
+import Signup from "./signup";
+import Login from "./login";
 
 
 
