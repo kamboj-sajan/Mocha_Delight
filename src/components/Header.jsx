@@ -17,7 +17,7 @@ function Header() {
         <li><Link to="/menu">Cafe-menu</Link></li>
       </ul>
       <div className="navbar-book">
-        <a href="#book">Sign in</a>
+        <Link to="/signup">Sign in</Link>
       </div>
     </nav>
      </div>
