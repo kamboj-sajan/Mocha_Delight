@@ -8,7 +8,7 @@ function ReviewForm({ fetchReviews }){
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('https://backend-pi-ruby.vercel.app/reviews', { name, review });
+    await axios.post('https://backend-one-flame.vercel.app/reviews', { name, review });
     fetchReviews();
     setName('');
     setReview('');
