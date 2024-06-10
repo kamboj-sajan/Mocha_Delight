@@ -20,7 +20,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/contact', formData);
+      await axios.post('https://backend-pi-ruby.vercel.app/contact', formData);
       alert('Message sent successfully!');
     } catch (error) {
       console.error('There was an error sending the message!', error);
