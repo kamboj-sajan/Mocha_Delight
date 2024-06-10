@@ -1,10 +1,13 @@
 import React from "react";
+import MenuList from "./MenuList";
+import menuItems from "./menuitems";
+import OrderForm from "./orderFrm";
 
 function OrderNow() {
   return (
     <div>
-      <h1>Order Now</h1>
-      <p>Order form or details here...</p>
+      <MenuList items={menuItems} />
+      <OrderForm />
     </div>
   );
 }
