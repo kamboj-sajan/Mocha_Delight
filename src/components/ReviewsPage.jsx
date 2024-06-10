@@ -8,7 +8,7 @@ const ReviewsPage = () => {
   const [reviews, setReviews] = useState([]);
 
   const fetchReviews = async () => {
-    const response = await axios.get('https://backend-gamma-ivory.vercel.app/reviews');
+    const response = await axios.get('https://backend-pi-ruby.vercel.app/reviews');
     setReviews(response.data);
   };
 
