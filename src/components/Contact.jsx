@@ -1,7 +1,32 @@
 import React from "react";
-import "../css/contact.css"
+import "../css/contact.css";
+import axios from "axios";
 
 function Contact() {
+   const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+    numberOfPeople: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/contact', formData);
+      alert('Message sent successfully!');
+    } catch (error) {
+      console.error('There was an error sending the message!', error);
+    }
+  };
+
   return (
     <div className="contact">
       <h1>CONTACT US</h1>
